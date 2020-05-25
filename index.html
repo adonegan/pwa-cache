@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <h1>This is the home page</h1>
+    <img src="img1.png" />
+
+    <a href="post1.html">Navigate to the first post</a>
+
+    <script>
+        if ('serviceWorker'in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(registration => {
+                    console.log('service worker registration successful')
+                })
+                .catch(err => {
+                    console.log('service worker registration failed', err)
+                })
+        }
+    </script>
+</body>
+</html>
